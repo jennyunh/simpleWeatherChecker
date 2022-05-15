@@ -2,24 +2,49 @@
 
 .App {
   text-align: center;
-  color: white;
+  color: rgb(40, 40, 40);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   font-family:'Roboto Mono', monospace;
+  height: 80vh;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(30, 255, 158);
+}
+
+a:hover{
+  color: rgb(30, 255, 158);
+}
+
+footer{
+  position: fixed;
+  color: rgb(152, 152, 152);
+  bottom: 0;
+  width: 100vw;
+  height: 15vmin;
+  background: rgb(49, 49, 49);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 body{
   width: 100vw;
   height: 100vh;
-  background: rgb(52, 52, 52);
+  background: #e5ebeb;
 }
 
 h1{
   font-size: 10vmin;
-  font-weight: medium;
+  font-weight: 300;
   text-align: center;
+  margin: 0;
+  letter-spacing: -0.5vmin;
 }
 
 .form{
@@ -34,26 +59,37 @@ justify-content: center;
 align-items: center;
 }
 
+.resultArea{
+  background: white;
+  border-radius: 2vmin;
+  padding: 5vmin;
+  box-shadow: rgb(176, 175, 175) 1px 1px 12px 3px;
+}
+
 input{
-  width: 40vmin;
-  height: 6vmin;
-  background: transparent;
-  border: none;
-  border-bottom: 2px white solid;
+  width: 70vmin;
+  height: 10vmin;
+  background: white;
+border-radius: 1vmin;
+border: none;
+padding-left: 4vmin;
   box-shadow: none;
-  color: white;
+  color: gray;
+  font-size: 4vmin;
+  font-family:'Roboto Mono', monospace;
 }
 
 button{
   padding: 2vmin;
-  background: rgb(80, 80, 80);
+  background: transparent;
   border-radius: 4vmin;
   border: none;
-  color: white;
+  color: rgb(44, 44, 44);
+  font-size: 6.5vmin;
 }
 
 button:hover{
   cursor: pointer;
-  background: rgb(59, 59, 59);
+color: rgb(88, 88, 88);
 
 }

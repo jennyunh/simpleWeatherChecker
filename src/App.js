@@ -76,7 +76,9 @@ let theResult = <div>
   return (
     <div className="App">
 <h1>Weather Checker</h1>
-{inputted ? theResult : theForm}
+
+{inputted ? <div className="resultArea">{theResult}</div> : theForm}
+
 {(error) && <div>
   
   <h2>ERROR: no such city exists</h2>
@@ -84,6 +86,11 @@ let theResult = <div>
   <button onClick={restartHandler}><VscDebugRestart/></button>
   
   </div>}
+
+<footer>
+<span>Weather API courtesy of <a href="">Open Weather</a><br/></span>
+<span>Created by <a href="https://www.jennyhwang.ca">Jenny H</a></span>
+</footer>
 
     </div>
   );
